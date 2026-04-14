@@ -4,54 +4,54 @@
 
 # Natália Vicente — Nail Designer
 
-**Website institucional** — Website estático, responsivo, sem dependências de build.
-Estética: clássico salão de beleza com identidade visual alternativa.
+**Brand website** — static, responsive, no build dependencies.
+Aesthetic: classic beauty salon with an alternative visual identity.
 
 </div>
 
 ---
 
-## Sobre
+## About
 
-Site de apresentação para o atelier de nail design da **Natália Vicente**.
-Construído em HTML, CSS e JavaScript puros, servido como página estática.
+Showcase site for **Natália Vicente**'s nail design atelier.
+Built with plain HTML, CSS and JavaScript, served as a static page.
 
-A linguagem visual mistura tipografia editorial condensada (Oswald + Playfair Display),
-paleta monocromática em preto / vermelho / osso e flourishes em estilo *old-school tattoo flash*.
+The visual language mixes condensed editorial typography (Oswald + Playfair Display),
+a monochrome palette in black / red / bone, and flourishes in *old-school tattoo flash* style.
 
 ## Stack
 
-| Camada | Tecnologia |
+| Layer | Technology |
 |---|---|
-| Markup | HTML5 semântico |
-| Estilos | CSS3 (custom properties, grid, clamp) |
-| Script | JavaScript ES6 (vanilla, sem frameworks) |
-| Tipografia | Google Fonts — Oswald · Playfair Display · Inter |
-| Build | *nenhum* — estático |
+| Markup | Semantic HTML5 |
+| Styles | CSS3 (custom properties, grid, clamp) |
+| Script | Vanilla JavaScript ES6 (no frameworks) |
+| Typography | Google Fonts — Oswald · Playfair Display · Inter |
+| Build | *none* — static |
 
-## Estrutura do projeto
+## Project structure
 
 ```
 natalia-website/
-├── index.html           # página única
+├── index.html           # single page
 ├── css/
-│   └── style.css        # folha de estilo única, organizada em 17 seções
+│   └── style.css        # single stylesheet, organized into 17 sections
 ├── js/
-│   └── main.js          # toggle do menu mobile (drawer + backdrop)
+│   └── main.js          # mobile menu toggle (drawer + backdrop)
 ├── images/
-│   ├── logo.png         # logotipo oficial com texto
-│   ├── logo-mark.png    # versão só-ilustração (usada no header)
-│   ├── favicon.png      # 256×256, derivado do logo-mark
-│   ├── hero-photo.jpg   # retrato principal
-│   └── about-photo.jpg  # foto da secção "Sobre"
+│   ├── logo.png         # official logo with wordmark
+│   ├── logo-mark.png    # illustration-only version (used in header)
+│   ├── favicon.png      # 256×256, derived from logo-mark
+│   ├── hero-photo.jpg   # main portrait
+│   └── about-photo.jpg  # photo for the "About" section
 ├── LICENSE
 └── README.md
 ```
 
-## Rodar localmente
+## Run locally
 
-Como é um site 100% estático, basta abrir o `index.html` no browser.
-Para desenvolvimento com *live reload*, qualquer servidor estático resolve:
+Since this is a fully static site, just open `index.html` in a browser.
+For development with *live reload*, any static server will do:
 
 ```bash
 # Python 3
@@ -61,68 +61,68 @@ python -m http.server 8080
 npx serve .
 
 # VS Code
-# extensão "Live Server" → clique direito em index.html → "Open with Live Server"
+# "Live Server" extension → right-click index.html → "Open with Live Server"
 ```
 
-Depois: [http://localhost:8080](http://localhost:8080)
+Then: [http://localhost:8080](http://localhost:8080)
 
 ## Design tokens
 
-Paleta definida em `:root` em `css/style.css`:
+Palette defined via `:root` in `css/style.css`:
 
-| Token | Valor | Uso |
+| Token | Value | Usage |
 |---|---|---|
-| `--red` | `#EE0310` | primária, CTAs, acentos |
-| `--red-deep` | `#C8162E` | gradientes |
-| `--red-orange` | `#E5421C` | gradientes quentes |
-| `--bone` | `#EEEEEE` | texto sobre fundo escuro |
-| `--ink` | `#0A0A0A` | fundo principal |
-| `--ink-soft` | `#141414` | fundos secundários |
+| `--red` | `#EE0310` | primary, CTAs, accents |
+| `--red-deep` | `#C8162E` | gradients |
+| `--red-orange` | `#E5421C` | warm gradients |
+| `--bone` | `#EEEEEE` | text on dark background |
+| `--ink` | `#0A0A0A` | main background |
+| `--ink-soft` | `#141414` | secondary backgrounds |
 
-## Responsividade
+## Responsiveness
 
-Breakpoints mobile-first:
+Mobile-first breakpoints:
 
-| Largura | Alvo |
+| Width | Target |
 |---|---|
-| ≥ 700px | serviços 2 colunas |
-| ≥ 760px | galeria 3 colunas |
-| ≥ 800px | footer 4 colunas · depoimentos 3 colunas |
-| ≥ 900px | hero / about / booking em 2 colunas |
-| ≥ 960px | nav desktop (hambúrguer desaparece) |
-| ≥ 1060px | serviços 3 colunas |
-| ≥ 1100px | galeria 4 colunas |
+| ≥ 700px | services 2 columns |
+| ≥ 760px | gallery 3 columns |
+| ≥ 800px | footer 4 columns · testimonials 3 columns |
+| ≥ 900px | hero / about / booking in 2 columns |
+| ≥ 960px | desktop nav (hamburger hidden) |
+| ≥ 1060px | services 3 columns |
+| ≥ 1100px | gallery 4 columns |
 
-## Acessibilidade
+## Accessibility
 
-- Landmarks semânticos (`<header>`, `<main>`, `<nav>`, `<footer>`).
-- `aria-expanded` / `aria-controls` no toggle mobile.
-- `aria-label` em navs e elementos decorativos.
-- Foco visível (`:focus-visible` com outline vermelho).
-- Fecho do drawer via tecla **Esc** ou clique no backdrop.
-- Respeita `prefers-reduced-motion`.
-- Contraste AA para texto sobre fundos escuros.
+- Semantic landmarks (`<header>`, `<main>`, `<nav>`, `<footer>`).
+- `aria-expanded` / `aria-controls` on the mobile toggle.
+- `aria-label` on navs and decorative elements.
+- Visible focus (`:focus-visible` with red outline).
+- Drawer closes on **Esc** key or backdrop click.
+- Respects `prefers-reduced-motion`.
+- AA contrast for text on dark backgrounds.
 
-## Seções da página
+## Page sections
 
-1. Ticker superior
-2. Header com logo + nav + CTA
-3. Hero com foto e manifesto tipográfico
+1. Top ticker
+2. Header with logo + nav + CTA
+3. Hero with photo and typographic manifesto
 4. Marquee *"Garotas rebeldes usam unhas afiadas"*
-5. Sobre
-6. Carta de serviços (6 itens)
-7. Bloco-manifesto em vermelho
-8. Galeria / portfólio (8 tiles)
-9. Depoimentos
-10. Agendamento
+5. About
+6. Service menu (6 items)
+7. Red manifesto block
+8. Gallery / portfolio (8 tiles)
+9. Testimonials
+10. Booking
 11. Footer
 
-## Licença
+## License
 
-Ver [LICENSE](LICENSE).
+See [LICENSE](LICENSE).
 
 ---
 
 <div align="center">
-Feito por Victor Prospero. Porto · 2026.
+Made by Victor Prospero. Porto · 2026.
 </div>
