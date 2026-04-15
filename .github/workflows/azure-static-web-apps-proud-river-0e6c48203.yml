@@ -1,4 +1,4 @@
-name: Azure Static Web Apps CI/CD
+name: CI/CD - Send to Azure
 
 on:
   push:
@@ -10,50 +10,47 @@ on:
       - main
   workflow_dispatch:
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  build_and_deploy_job:
+  deploy:
     if: github.event_name == 'push' || github.event_name == 'workflow_dispatch' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
-    name: Build and Deploy Job
+    name: Deploy to Azure Static Web Apps
     permissions:
       id-token: write
       contents: read
     steps:
-      - uses: actions/checkout@v3
-        with:
-          submodules: true
-          lfs: false
-      - name: Install OIDC Client from Core Package
-        run: npm install @actions/core@1.6.0 @actions/http-client
-      - name: Get Id Token
-        uses: actions/github-script@v6
+      - uses: actions/checkout@v4
+
+      - name: Get OIDC Token
+        uses: actions/github-script@v7
         id: idtoken
         with:
           script: |
-            const coredemo = require('@actions/core')
-            return await coredemo.getIDToken()
+            const core = require('@actions/core')
+            return await core.getIDToken()
           result-encoding: string
-      - name: Build And Deploy
-        id: builddeploy
+
+      - name: Deploy
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_PROUD_RIVER_0E6C48203 }}
-          action: "upload"
-          app_location: "/"
-          api_location: ""
-          output_location: ""
+          action: upload
+          app_location: /
           skip_app_build: true
           skip_api_build: true
           github_id_token: ${{ steps.idtoken.outputs.result }}
 
-  close_pull_request_job:
+  close_preview:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
-    name: Close Pull Request Job
+    name: Close PR Preview
     steps:
-      - name: Close Pull Request
-        id: closepullrequest
+      - name: Close Preview
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_PROUD_RIVER_0E6C48203 }}
-          action: "close"
+          action: close
