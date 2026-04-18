@@ -5,21 +5,22 @@
    TABLE OF CONTENTS
      1. Design tokens (custom properties)
      2. Reset & base
-     3. Utilities (grain, decorative, social icons)
-     4. Top ticker
-     5. Header & navigation
-     6. Buttons
-     7. Hero
-     8. Marquee
-     9. Shared section elements
-    10. About
-    11. Services
-    12. Manifesto (red block)
-    13. Gallery
-    14. Testimonials
-    15. Booking
-    16. Footer
-    17. Motion / reduced-motion
+     3. Accessibility helpers (skip link, sr-only)
+     4. Utilities (grain, decorative, social icons)
+     5. Top ticker
+     6. Header & navigation
+     7. Buttons
+     8. Hero
+     9. Marquee
+    10. Shared section elements
+    11. About
+    12. Services
+    13. Manifesto (red block)
+    14. Gallery
+    15. Testimonials
+    16. Booking
+    17. Footer
+    18. Motion / reduced-motion
    ============================================================= */
 
 
@@ -96,7 +97,27 @@ button{
 }
 
 
-/* 3. Utilities
+/* 3. Accessibility helpers
+   ============================================================= */
+.skip-link{
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 100;
+  background: var(--red);
+  color: var(--ink);
+  padding: 10px 16px;
+  font-family: var(--ff-display);
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  font-size: 12px;
+  transform: translateY(-150%);
+  transition: transform .2s var(--ease);
+}
+.skip-link:focus-visible{ transform: translateY(0); }
+
+
+/* 4. Utilities
    ============================================================= */
 .grain{ position: relative; }
 .grain::before{
@@ -145,7 +166,7 @@ button{
 }
 
 
-/* 4. Top ticker
+/* 5. Top ticker
    ============================================================= */
 .ticker{
   background: var(--red);
@@ -172,7 +193,7 @@ button{
 }
 
 
-/* 5. Header & navigation
+/* 6. Header & navigation
    ============================================================= */
 .header{
   position: sticky;
@@ -318,7 +339,7 @@ body.no-scroll{ overflow: hidden; }
 }
 
 
-/* 6. Buttons
+/* 7. Buttons
    ============================================================= */
 .cta{
   display: inline-flex;
@@ -353,7 +374,7 @@ body.no-scroll{ overflow: hidden; }
 }
 
 
-/* 7. Hero
+/* 8. Hero
    ============================================================= */
 .hero{
   position: relative;
@@ -473,7 +494,7 @@ body.no-scroll{ overflow: hidden; }
 }
 
 
-/* 8. Marquee
+/* 9. Marquee
    ============================================================= */
 .marquee{
   background: var(--bone);
@@ -512,7 +533,7 @@ body.no-scroll{ overflow: hidden; }
 }
 
 
-/* 9. Shared section elements
+/* 10. Shared section elements
    ============================================================= */
 section{ position: relative; }
 
@@ -557,7 +578,7 @@ section{ position: relative; }
 }
 
 
-/* 10. About
+/* 11. About
    ============================================================= */
 .about{
   background: var(--ink);
@@ -625,7 +646,7 @@ section{ position: relative; }
 }
 
 
-/* 11. Services
+/* 12. Services
    ============================================================= */
 .services{ background: var(--ink-soft); }
 .services__grid{
@@ -679,7 +700,7 @@ section{ position: relative; }
 @media (min-width: 1060px){ .services__grid{ grid-template-columns: repeat(3, 1fr); } }
 
 
-/* 12. Manifesto (red block)
+/* 13. Manifesto (red block)
    ============================================================= */
 .manifesto{
   background: var(--red);
@@ -776,7 +797,7 @@ section{ position: relative; }
 }
 
 
-/* 13. Gallery
+/* 14. Gallery
    ============================================================= */
 .gallery{ background: var(--ink); }
 .gallery .wrap{ padding-bottom: 40px; }
@@ -805,7 +826,7 @@ section{ position: relative; }
 @media (min-width: 1100px){ .gallery__grid{ grid-template-columns: repeat(4, 1fr); } }
 
 
-/* 14. Testimonials
+/* 15. Testimonials
    ============================================================= */
 .love{
   background: var(--ink-soft);
@@ -851,12 +872,14 @@ section{ position: relative; }
   font-size: 11px;
   color: var(--fg-muted);
 }
-.quote__who b{
+.quote__who cite{
   color: var(--fg);
   display: block;
   font-size: 13px;
   letter-spacing: .18em;
   margin-bottom: 4px;
+  font-style: normal;
+  font-weight: 700;
 }
 
 @media (min-width: 800px){
@@ -864,7 +887,7 @@ section{ position: relative; }
 }
 
 
-/* 15. Booking
+/* 16. Booking
    ============================================================= */
 .booking{
   background: var(--ink);
@@ -991,7 +1014,7 @@ section{ position: relative; }
 }
 
 
-/* 16. Footer
+/* 17. Footer
    ============================================================= */
 .footer{
   background: var(--ink-deep);
@@ -1027,7 +1050,11 @@ section{ position: relative; }
 }
 .footer a:hover{ color: var(--red); }
 
-.footer__brand img{ height: 64px; width: auto; margin-bottom: 16px; }
+.footer__brand img{ height: 64px; width: auto; margin: 0 auto 16px; }
+
+@media (min-width: 900px){
+  .footer__brand img{ margin: 0 0 16px; }
+}
 .footer__brand p{
   color: var(--fg-muted);
   font-size: 14px;
@@ -1058,7 +1085,7 @@ section{ position: relative; }
 }
 
 
-/* 17. Motion / reduced-motion
+/* 18. Motion / reduced-motion
    ============================================================= */
 @media (prefers-reduced-motion: reduce){
   *,
