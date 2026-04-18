@@ -18,9 +18,13 @@
   <meta property="og:type"        content="website" />
   <meta property="og:title"       content="Natália Vicente — Nail Designer" />
   <meta property="og:description" content="Unhas que refletem a sua força interior. Nail design autoral no Porto." />
-  <meta property="og:image"       content="images/hero-photo.jpg" />
+  <meta property="og:url"         content="https://www.nataliavicente.pt" />
+  <meta property="og:image"       content="https://www.nataliavicente.pt/images/hero-photo.webp" />
   <meta property="og:locale"      content="pt_PT" />
   <meta name="twitter:card"       content="summary_large_image" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.nataliavicente.pt" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,6 +35,22 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
+  <!-- ─── icon sprite ─────────────────────────────────────── -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-star" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 0l2 10 10 2-10 2-2 10-2-10L0 12l10-2z"/>
+    </symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+    </symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+    </symbol>
+  </svg>
 
   <!-- ─── top ticker ──────────────────────────────────────── -->
   <div class="ticker" aria-hidden="true">
@@ -48,7 +68,7 @@
   <header class="header">
     <div class="header__inner">
       <a href="#" class="brand" aria-label="Natália Vicente — início">
-        <img src="images/logo-mark.png" alt="" width="64" height="48" />
+        <img src="images/logo-mark.png" alt="" width="64" height="48" decoding="async" />
         <span class="brand__txt">
           Natália Vicente
           <small>Nail Designer</small>
@@ -91,12 +111,8 @@
 
     <!-- ─── hero ──────────────────────────────────────────── -->
     <section class="hero grain" aria-label="Início">
-      <span class="flourish tl" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2 10 10 2-10 2-2 10-2-10L0 12l10-2z"/></svg>
-      </span>
-      <span class="flourish tr" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2 10 10 2-10 2-2 10-2-10L0 12l10-2z"/></svg>
-      </span>
+      <span class="flourish tl" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg></span>
+      <span class="flourish tr" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg></span>
 
       <div class="hero__inner">
         <div class="hero__copy">
@@ -111,14 +127,14 @@
             <a href="#galeria" class="cta cta--ghost">Ver portfólio</a>
           </div>
           <dl class="hero__meta">
-            <div><dt>Desde</dt><b>2018</b></div>
-            <div><dt>Atelier</dt><b>Porto • PT</b></div>
-            <div><dt>Estilo</dt><b>Autoral · Alt</b></div>
+            <div><dt>Desde</dt><dd>2018</dd></div>
+            <div><dt>Atelier</dt><dd>Porto • PT</dd></div>
+            <div><dt>Estilo</dt><dd>Autoral · Alt</dd></div>
           </dl>
         </div>
 
         <figure class="hero__photo">
-          <img src="images/hero-photo.jpg" alt="Retrato de Natália Vicente" loading="eager" fetchpriority="high" />
+          <img src="images/hero-photo.webp" alt="Retrato de Natália Vicente" width="1600" height="2000" loading="eager" fetchpriority="high" decoding="async" />
           <figcaption class="hero__tag">
             <span>Natália Vicente</span>
             <span><strong>Nº 001</strong> — retrato</span>
@@ -132,19 +148,19 @@
       <div class="marquee__track">
         <span>
           A atitude de um trabalho sutil
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2 10 10 2-10 2-2 10-2-10L0 12l10-2z"/></svg>
+          <svg viewBox="0 0 24 24"><use href="#i-star"/></svg>
           Nail designer
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2 10 10 2-10 2-2 10-2-10L0 12l10-2z"/></svg>
+          <svg viewBox="0 0 24 24"><use href="#i-star"/></svg>
           Natália Vicente
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2 10 10 2-10 2-2 10-2-10L0 12l10-2z"/></svg>
+          <svg viewBox="0 0 24 24"><use href="#i-star"/></svg>
         </span>
         <span>
           A atitude de um trabalho sutil
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2 10 10 2-10 2-2 10-2-10L0 12l10-2z"/></svg>
+          <svg viewBox="0 0 24 24"><use href="#i-star"/></svg>
           Nail designer
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2 10 10 2-10 2-2 10-2-10L0 12l10-2z"/></svg>
+          <svg viewBox="0 0 24 24"><use href="#i-star"/></svg>
           Natália Vicente
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2 10 10 2-10 2-2 10-2-10L0 12l10-2z"/></svg>
+          <svg viewBox="0 0 24 24"><use href="#i-star"/></svg>
         </span>
       </div>
     </div>
@@ -153,7 +169,7 @@
     <section id="sobre" class="about">
       <div class="wrap about__grid">
         <figure class="about__img">
-          <img src="images/about-photo.jpg" alt="Natália no atelier" loading="lazy" />
+          <img src="images/about-photo.webp" alt="Natália no atelier" width="1200" height="1600" loading="lazy" decoding="async" />
           <figcaption class="about__badge">Atelier <b>Natália Vicente</b> · Desde 2018</figcaption>
         </figure>
 
@@ -181,9 +197,7 @@
     <section class="manifesto grain" aria-label="Manifesto">
       <div class="wrap">
         <p class="manifesto__label">Manifesto</p>
-        <h2 class="manifesto__title">
-          A atitude de um trabalho sutil.
-        </h2>
+        <h2 class="manifesto__title">A atitude de um trabalho sutil.</h2>
         <p class="manifesto__body">
           O meu maior propósito é entregar um trabalho sutil — desde a pintura do verniz, à remoção cuidadosa
           da cutícula e, acima de tudo, na remoção segura e precisa do produto anterior.
@@ -205,11 +219,11 @@
           com profissionalismo e sensibilidade.
         </p>
         <p class="manifesto__sub">
-          <b>01</b> Rigor técnico
-          <b>02</b> Desenho autoral
-          <b>03</b> Atendimento privado
-          <b>04</b> Saúde em primeiro lugar
-          <b>05</b> Sem dor. Sem pressa.
+          <span><b>01</b>Rigor técnico</span>
+          <span><b>02</b>Desenho autoral</span>
+          <span><b>03</b>Atendimento privado</span>
+          <span><b>04</b>Saúde em primeiro lugar</span>
+          <span><b>05</b>Sem dor. Sem pressa.</span>
         </p>
       </div>
     </section>
@@ -257,19 +271,19 @@
 
     <!-- ─── gallery ───────────────────────────────────────── -->
     <section id="galeria" class="gallery">
-      <div class="wrap" style="padding-bottom: 40px;">
+      <div class="wrap">
         <span class="section-label">Portfólio</span>
         <h2 class="section-title">Trabalho <em>recente</em>.</h2>
 
         <div class="gallery__grid">
-          <a class="tile t1" href="#"><span class="tile__label"><span class="tile__name">Ruby Claws</span><span class="tile__num">01</span></span></a>
-          <a class="tile t2" href="#"><span class="tile__label"><span class="tile__name">Noir Velvet</span><span class="tile__num">02</span></span></a>
-          <a class="tile t3" href="#"><span class="tile__label"><span class="tile__name">Ember</span><span class="tile__num">03</span></span></a>
-          <a class="tile t4" href="#"><span class="tile__label"><span class="tile__name">Split Flash</span><span class="tile__num">04</span></span></a>
-          <a class="tile t5" href="#"><span class="tile__label"><span class="tile__name">Halo</span><span class="tile__num">05</span></span></a>
-          <a class="tile t6" href="#"><span class="tile__label"><span class="tile__name">Vortex</span><span class="tile__num">06</span></span></a>
-          <a class="tile t7" href="#"><span class="tile__label"><span class="tile__name">Drip Crimson</span><span class="tile__num">07</span></span></a>
-          <a class="tile t8" href="#"><span class="tile__label"><span class="tile__name">Wildcard</span><span class="tile__num">08</span></span></a>
+          <figure class="tile"><img src="images/portfolio-03.webp" alt="Portfólio Natália Vicente — trabalho autoral #01" width="500"  height="500"  loading="lazy" decoding="async" /></figure>
+          <figure class="tile"><img src="images/portfolio-04.webp" alt="Portfólio Natália Vicente — trabalho autoral #02" width="1024" height="1024" loading="lazy" decoding="async" /></figure>
+          <figure class="tile"><img src="images/portfolio-05.webp" alt="Portfólio Natália Vicente — trabalho autoral #03" width="1024" height="1024" loading="lazy" decoding="async" /></figure>
+          <figure class="tile"><img src="images/portfolio-06.webp" alt="Portfólio Natália Vicente — trabalho autoral #04" width="1024" height="1024" loading="lazy" decoding="async" /></figure>
+          <figure class="tile"><img src="images/portfolio-07.webp" alt="Portfólio Natália Vicente — trabalho autoral #05" width="1000" height="795"  loading="lazy" decoding="async" /></figure>
+          <figure class="tile"><img src="images/portfolio-08.webp" alt="Portfólio Natália Vicente — trabalho autoral #06" width="1024" height="1024" loading="lazy" decoding="async" /></figure>
+          <figure class="tile"><img src="images/portfolio-09.webp" alt="Portfólio Natália Vicente — trabalho autoral #07" width="1024" height="1024" loading="lazy" decoding="async" /></figure>
+          <figure class="tile"><img src="images/portfolio-10.webp" alt="Portfólio Natália Vicente — trabalho autoral #08" width="1024" height="1024" loading="lazy" decoding="async" /></figure>
         </div>
       </div>
     </section>
@@ -312,16 +326,12 @@
           </p>
           <dl class="booking__info">
             <div>
-              <dt>Atelier</dt>
-              <dd>Rua das Flores, 000<br />Porto · Portugal</dd>
-            </div>
-            <div>
               <dt>Contato</dt>
-              <dd>+351 900 000 000<br />ola@natalia-vicente.pt</dd>
+              <dd><a href="tel:+351912785820">+351 912 785 820</a></dd>
             </div>
             <div>
               <dt>Instagram</dt>
-              <dd>@nataliavicente.nails</dd>
+              <dd><a href="https://www.instagram.com/nataliabionails.pt/" target="_blank" rel="noopener noreferrer" class="social-link"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-ig"/></svg>@nataliabionails.pt</a></dd>
             </div>
             <div>
               <dt>Pagamento</dt>
@@ -333,7 +343,10 @@
         <aside class="booking__card">
           <h3>Marca o teu horário</h3>
           <p>Envia uma mensagem direta via WhatsApp ou Instagram. Resposta em até 24 horas.</p>
-          <a href="#" class="cta">WhatsApp <span class="star" aria-hidden="true"></span></a>
+          <a href="https://wa.me/qr/WJSWC2VQEGEJC1" class="cta" target="_blank" rel="noopener noreferrer">
+            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+            WhatsApp <span class="star" aria-hidden="true"></span>
+          </a>
           <dl class="hrs">
             <dt>Ter — Sex</dt><dd><b>10h — 20h</b></dd>
             <dt>Sábado</dt><dd><b>10h — 16h</b></dd>
@@ -350,7 +363,7 @@
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer__brand">
-        <img src="images/logo.png" alt="Natália Vicente — Nail Designer" />
+        <img src="images/logo.png" alt="Natália Vicente — Nail Designer" width="842" height="887" loading="lazy" decoding="async" />
         <p>Nail designer · atelier privado no Porto. Unhas autorais, feitas para quem quer ser vista.</p>
       </div>
       <div>
@@ -365,23 +378,19 @@
       <div>
         <h4>Contato</h4>
         <ul>
-          <li>+351 900 000 000</li>
-          <li>ola@natalia-vicente.pt</li>
-          <li>Rua das Flores, Porto</li>
+          <li><a href="tel:+351912785820">+351 912 785 820</a></li>
         </ul>
       </div>
       <div>
         <h4>Social</h4>
         <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">TikTok</a></li>
-          <li><a href="#">Pinterest</a></li>
+          <li><a href="https://www.instagram.com/nataliabionails.pt/" target="_blank" rel="noopener noreferrer" class="social-link"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-ig"/></svg>Instagram</a></li>
         </ul>
       </div>
     </div>
     <div class="bottom">
       <span>© 2026 Natália Vicente — Nail Designer</span>
-      <span>Made with <span class="star" aria-hidden="true"></span> no Porto</span>
+      <span>Made with <svg class="heart" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-heart"/></svg> no Porto</span>
     </div>
   </footer>
 
