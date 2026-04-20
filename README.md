@@ -41,14 +41,15 @@ natalia-website/
 ├── css/
 │   └── style.css             # single stylesheet, organized into 18 sections
 ├── js/
-│   └── main.js               # mobile menu toggle (drawer + backdrop + focus trap)
+│   └── main.js               # two IIFEs: mobile drawer (focus trap) + love-letters carousel
 ├── images/
 │   ├── logo.png              # official logo with wordmark
 │   ├── logo-mark.png         # illustration-only version (used in header)
 │   ├── favicon.png           # derived from logo-mark
 │   ├── hero-photo.webp       # main portrait
 │   ├── about-photo.webp      # photo for the "About" section
-│   └── portfolio-03..10.webp # gallery tiles
+│   ├── portfolio-03..10.webp # gallery tiles
+│   └── love-01..05.jpg       # testimonial screenshots (WhatsApp / Instagram)
 ├── staticwebapp.config.json  # Azure Static Web Apps routing / headers
 ├── .github/workflows/        # CI/CD to Azure Static Web Apps
 ├── LICENSE
@@ -107,8 +108,8 @@ Mobile-first breakpoints:
 | ≥ 560px | footer 2 columns |
 | ≥ 600px | header CTA becomes visible |
 | ≥ 700px | services 2 columns |
+| ≥ 720px | testimonials carousel gains side padding for nav arrows |
 | ≥ 760px | gallery 3 columns |
-| ≥ 800px | testimonials 3 columns |
 | ≥ 900px | hero / about / booking / footer in larger layouts |
 | ≥ 960px | desktop nav (hamburger hidden) |
 | ≥ 1060px | services 3 columns |
@@ -123,6 +124,7 @@ Mobile-first breakpoints:
 - Visible focus (`:focus-visible` with red outline).
 - Drawer closes on **Esc** key, backdrop click, or link activation.
 - Focus is trapped inside the open drawer and restored on close.
+- Testimonials carousel: `aria-roledescription="carousel"`, per-slide labels, keyboard arrows, `aria-current` on active dot.
 - Respects `prefers-reduced-motion`.
 - AA contrast for text on dark backgrounds.
 
@@ -140,10 +142,10 @@ Mobile-first breakpoints:
 3. Hero with photo and typographic statement
 4. Marquee *"A atitude de um trabalho sutil"*
 5. About
-6. Manifesto (red block)
+6. Manifesto
 7. Service menu (6 items)
 8. Gallery / portfolio (8 tiles)
-9. Testimonials
+9. Testimonials — *Love Letters* carousel (screenshots of real client messages)
 10. Booking
 11. Footer
 

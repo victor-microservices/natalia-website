@@ -324,22 +324,24 @@
         <span class="section-label">Love letters</span>
         <h2 class="section-title">Quem já <em>passou por aqui</em>.</h2>
 
-        <div class="love__grid">
-          <figure class="quote">
-            <span class="quote__mark" aria-hidden="true">&ldquo;</span>
-            <blockquote><p>Saí do atelier com unhas que combinavam mais comigo do que qualquer tatuagem que já fiz. É arte de verdade.</p></blockquote>
-            <figcaption class="quote__who"><cite>Mariana L.</cite>Cliente desde 2022</figcaption>
-          </figure>
-          <figure class="quote">
-            <span class="quote__mark" aria-hidden="true">&ldquo;</span>
-            <blockquote><p>A Natália tem um olhar raro — mistura clássico, punk e elegância sem pesar a mão. Duração impecável.</p></blockquote>
-            <figcaption class="quote__who"><cite>Inês P.</cite>Cliente desde 2023</figcaption>
-          </figure>
-          <figure class="quote">
-            <span class="quote__mark" aria-hidden="true">&ldquo;</span>
-            <blockquote><p>Cada atendimento é uma experiência, não um serviço. O espaço, a música, o cuidado com o detalhe — tudo.</p></blockquote>
-            <figcaption class="quote__who"><cite>Carla M.</cite>Cliente desde 2021</figcaption>
-          </figure>
+        <div class="love__carousel" data-love-carousel aria-roledescription="carrossel" aria-label="Mensagens reais de clientes">
+          <button class="love__nav love__nav--prev" type="button" data-love-prev aria-label="Depoimento anterior">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+
+          <div class="love__track" data-love-track tabindex="0">
+            <figure class="shot" aria-roledescription="slide" aria-label="1 de 5"><img src="images/love-01.jpg" alt="Depoimento de cliente via WhatsApp elogiando o atendimento detalhista e a qualidade dos produtos" loading="lazy" decoding="async" /></figure>
+            <figure class="shot" aria-roledescription="slide" aria-label="2 de 5"><img src="images/love-02.jpg" alt="Depoimento de cliente via WhatsApp destacando a qualidade do trabalho de manicure" loading="lazy" decoding="async" /></figure>
+            <figure class="shot" aria-roledescription="slide" aria-label="3 de 5"><img src="images/love-03.jpg" alt="Depoimento detalhado de cliente sobre profissionalismo, pontualidade e cuidado da Natália" loading="lazy" decoding="async" /></figure>
+            <figure class="shot" aria-roledescription="slide" aria-label="4 de 5"><img src="images/love-04.jpg" alt="Comentário no Instagram de cliente satisfeita com as unhas" loading="lazy" decoding="async" /></figure>
+            <figure class="shot" aria-roledescription="slide" aria-label="5 de 5"><img src="images/love-05.jpg" alt="Avaliação de cliente no Google recomendando a pedicure" loading="lazy" decoding="async" /></figure>
+          </div>
+
+          <button class="love__nav love__nav--next" type="button" data-love-next aria-label="Próximo depoimento">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+
+          <div class="love__dots" data-love-dots aria-label="Selecionar depoimento"></div>
         </div>
       </div>
     </section>

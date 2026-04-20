@@ -70,3 +70,75 @@
     if (e.matches && isOpen()) closeNav();
   });
 })();
+
+/**
+ * Love letters carousel — one testimonial at a time, scroll-snap + dots + arrows.
+ */
+(function () {
+  'use strict';
+
+  const root = document.querySelector('[data-love-carousel]');
+  if (!root) return;
+
+  const track  = root.querySelector('[data-love-track]');
+  const prev   = root.querySelector('[data-love-prev]');
+  const next   = root.querySelector('[data-love-next]');
+  const dotsEl = root.querySelector('[data-love-dots]');
+  if (!track || !prev || !next || !dotsEl) return;
+
+  const slides = Array.from(track.querySelectorAll('.shot'));
+  if (slides.length === 0) return;
+
+  // Build dots (plain buttons — role=tab would conflict with carousel semantics)
+  const dots = slides.map((_, i) => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.setAttribute('aria-label', `Ir para depoimento ${i + 1}`);
+    b.addEventListener('click', () => scrollToIndex(i));
+    dotsEl.appendChild(b);
+    return b;
+  });
+
+  let currentIndex = 0;
+
+  function scrollToIndex(i) {
+    const clamped = Math.max(0, Math.min(slides.length - 1, i));
+    slides[clamped].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+  }
+
+  function updateActive() {
+    const trackRect = track.getBoundingClientRect();
+    const center = trackRect.left + trackRect.width / 2;
+    let closest = 0;
+    let minDist = Infinity;
+    slides.forEach((s, i) => {
+      const r = s.getBoundingClientRect();
+      const d = Math.abs(r.left + r.width / 2 - center);
+      if (d < minDist) { minDist = d; closest = i; }
+    });
+    if (closest !== currentIndex) currentIndex = closest;
+    dots.forEach((d, i) => d.setAttribute('aria-current', i === currentIndex ? 'true' : 'false'));
+    prev.disabled = currentIndex === 0;
+    next.disabled = currentIndex === slides.length - 1;
+  }
+
+  prev.addEventListener('click', () => scrollToIndex(currentIndex - 1));
+  next.addEventListener('click', () => scrollToIndex(currentIndex + 1));
+
+  track.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft')  { e.preventDefault(); scrollToIndex(currentIndex - 1); }
+    if (e.key === 'ArrowRight') { e.preventDefault(); scrollToIndex(currentIndex + 1); }
+  });
+
+  let scrollRaf = 0;
+  track.addEventListener('scroll', () => {
+    if (scrollRaf) return;
+    scrollRaf = requestAnimationFrame(() => {
+      scrollRaf = 0;
+      updateActive();
+    });
+  });
+
+  window.addEventListener('resize', updateActive);
+  updateActive();
+})();
