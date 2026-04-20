@@ -961,8 +961,9 @@ section{ position: relative; }
   line-height: .9;
   font-size: clamp(38px, 6.5vw, 90px);
   margin: 0 0 24px;
-  overflow-wrap: break-word;
-  hyphens: auto;
+  overflow-wrap: normal;
+  word-break: keep-all;
+  hyphens: none;
 }
 .booking__title em{
   font-family: var(--ff-serif);
