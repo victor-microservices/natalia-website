@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "html_lang": "en-GB",
+    "title": "Natália Vicente — Nail Designer",
+    "description": "Signature nail design by Natália Vicente. Private atelier in Porto — between the classic and the alternative.",
+    "og_title": "Natália Vicente — Nail Designer",
+    "og_description": "Nails that reflect your inner strength. Signature nail design in Porto.",
+    "og_locale": "en_GB"
+  },
+  "a11y": {
+    "skip_link": "Skip to content",
+    "brand": "Natália Vicente — home",
+    "nav_main": "Main navigation",
+    "nav_mobile": "Mobile navigation",
+    "nav_toggle_open": "Open menu",
+    "lang_switch": "Switch to Portuguese",
+    "love_carousel": "Real messages from clients",
+    "love_roledescription": "carousel",
+    "love_prev": "Previous testimonial",
+    "love_next": "Next testimonial",
+    "love_dots": "Select testimonial",
+    "love_slide": "{{n}} of {{total}}",
+    "love_dot": "Go to testimonial {{n}}"
+  },
+  "img": {
+    "hero": "Portrait of Natália Vicente",
+    "about": "Natália at the atelier",
+    "logo": "Natália Vicente — Nail Designer",
+    "love_1": "Client testimonial via WhatsApp praising the attentive service and product quality",
+    "love_2": "Client testimonial via WhatsApp highlighting the quality of the manicure work",
+    "love_3": "Detailed client testimonial about Natália's professionalism, punctuality and care",
+    "love_4": "Instagram comment from a happy client about her nails",
+    "love_5": "Google review from a client recommending the pedicure",
+    "portfolio_1": "Natália Vicente portfolio — signature work #01",
+    "portfolio_2": "Natália Vicente portfolio — signature work #02",
+    "portfolio_3": "Natália Vicente portfolio — signature work #03",
+    "portfolio_4": "Natália Vicente portfolio — signature work #04",
+    "portfolio_5": "Natália Vicente portfolio — signature work #05",
+    "portfolio_6": "Natália Vicente portfolio — signature work #06",
+    "portfolio_7": "Natália Vicente portfolio — signature work #07",
+    "portfolio_8": "Natália Vicente portfolio — signature work #08"
+  },
+  "ticker": {
+    "bookings": "Bookings open for May",
+    "strength": "Nails that reflect your inner strength",
+    "designer": "Nail designer • Porto"
+  },
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "gallery": "Gallery",
+    "love": "Testimonials",
+    "contact": "Contact",
+    "cta": "Book"
+  },
+  "hero": {
+    "eyebrow": "Studio • Signature Nail Design",
+    "title": "Nails that <em>reflect</em> your inner strength.",
+    "lede": "Signature nail design for women who don't ask permission. Between the classic and the alternative, each pair of hands becomes a one-of-a-kind piece — thought through, drawn and sculpted to measure.",
+    "cta_book": "Book a session",
+    "cta_portfolio": "See portfolio",
+    "meta_since_dt": "Since",
+    "meta_since_dd": "2018",
+    "meta_atelier_dt": "Atelier",
+    "meta_atelier_dd": "Porto • PT",
+    "meta_style_dt": "Style",
+    "meta_style_dd": "Signature · Alt",
+    "photo_name": "Natália Vicente",
+    "photo_caption": "<strong>No. 001</strong> — portrait"
+  },
+  "marquee": {
+    "phrase": "The attitude of subtle craft",
+    "role": "Nail designer",
+    "name": "Natália Vicente"
+  },
+  "about": {
+    "label": "About",
+    "title": "Artist. Perfectionist. <em>Feminine</em> and rebellious.",
+    "p1": "My name is Natália Vicente. I'm Brazilian, from Greater São Paulo. I've been working with nails since 2018. Before I found my great passion — the world of nails — I spent some time in the nutrition field. It was, however, in nails that I managed to blend the attitude of my alternative style with the subtlety of the colours that transform hands and add meaning to every story I hear and feel.",
+    "p2": "I believe the beauty of nails must be tied to subtle, delicate work. As I always say: \"feeling pain while having your nails done is not normal.\" My commitment is to offer technique, care and respect to every client, pursuing results that honour nail health and express personality without compromising on comfort.",
+    "signature": "Natália Vicente <span>—</span> Nail Designer",
+    "badge": "Atelier <b>Natália Vicente</b> · Since 2018"
+  },
+  "manifesto": {
+    "label": "Manifesto",
+    "title": "The attitude of subtle craft.",
+    "p1": "My greatest purpose is to deliver subtle work — from the polish application, to the careful cuticle removal and, above all, the safe and precise removal of the previous product.",
+    "p2": "I believe in service delivered with love and delicacy, focused on a flawless finish and long wear. Every step is done with attention to detail: correct nail preparation, choice of quality products, skilled application and removal, and a finish that protects and enhances the natural beauty of the nails.",
+    "list_1": "Treat every client with respect and individual care;",
+    "list_2": "Use methods that preserve the health of nails and skin;",
+    "list_3": "Guarantee a uniform, luminous and long-lasting finish;",
+    "list_4": "Maintain a hygienic and comfortable environment throughout the process.",
+    "p3": "If you're looking for an elegant, natural and long-lasting result, it will be a pleasure to care for your nails with professionalism and sensitivity.",
+    "sub_1": "<b>01</b>Technical rigour",
+    "sub_2": "<b>02</b>Signature design",
+    "sub_3": "<b>03</b>Private service",
+    "sub_4": "<b>04</b>Health first",
+    "sub_5": "<b>05</b>No pain. No rush."
+  },
+  "services": {
+    "label": "Services Menu",
+    "title": "What's done <em>in here</em>.",
+    "s1_num": "01 / Signature",
+    "s1_name": "Nail extension",
+    "s1_desc": "Fine, resistant and discreet structure. For those who want length without bulk — a natural finish.",
+    "s2_num": "02 / Signature",
+    "s2_name": "Nail Art",
+    "s2_desc": "Hand-drawn designs, gemstone placement, nail jewellery.",
+    "s3_num": "03 / Classic",
+    "s3_name": "Classic Manicure",
+    "s3_desc": "Thorough preparation, cuticles, traditional polish application. The basics, done with the rigour of a proper Brazilian manicurist.",
+    "s4_num": "04 / Care",
+    "s4_name": "Pedicure & Spa Pedicure",
+    "s4_desc": "Exfoliation, intensive hydration, traditional or gel polish application, callus removal. A long ritual with warm towels for a moment of rest.",
+    "s5_num": "05 / Biological",
+    "s5_name": "Biological Gel Polish",
+    "s5_desc": "Application of Bio Sculpture biological gel polish, which respects the health of the natural nail. Provides a glossy, long-lasting, natural-looking finish without damaging the nail. Ideal for those who want beauty and care together.",
+    "s6_num": "06 / Aftercare",
+    "s6_name": "Maintenance & Removal",
+    "s6_desc": "Maintenance every 3–4 weeks. Removal is done chemically or mechanically, depending on the work you have — no harm to the natural nail plate."
+  },
+  "gallery": {
+    "label": "Portfolio",
+    "title": "Recent <em>work</em>."
+  },
+  "love": {
+    "label": "Love letters",
+    "title": "Those who have <em>been here</em>."
+  },
+  "booking": {
+    "label": "Booking",
+    "title": "Book your <em>session</em>.",
+    "lede": "Slots open monthly and fill fast. Send a message with your desired service and, if any, references — I reply within 24h.",
+    "contact_dt": "Contact",
+    "instagram_dt": "Instagram",
+    "payment_dt": "Payment",
+    "payment_dd": "MB Way · Card · Bank transfer",
+    "card_title": "Book your slot",
+    "card_desc": "Send a direct message via WhatsApp or Instagram. Reply within 24 hours.",
+    "hours_weekdays_dt": "Tue — Fri",
+    "hours_weekdays_dd": "<b>10am — 8pm</b>",
+    "hours_sat_dt": "Saturday",
+    "hours_sat_dd": "<b>10am — 4pm</b>",
+    "hours_sun_dt": "Sunday",
+    "hours_sun_dd": "<b>Closed</b>",
+    "hours_mon_dt": "Monday",
+    "hours_mon_dd": "<b>By appointment</b>"
+  },
+  "footer": {
+    "brand_desc": "Nail designer · private atelier in Porto. Signature nails, made for those who want to be seen.",
+    "explore": "Explore",
+    "contact": "Contact",
+    "social": "Social",
+    "copyright": "© 2026 Natália Vicente — Nail Designer",
+    "made_before": "Made with",
+    "made_after": "in Porto"
+  }
+}

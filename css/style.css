@@ -9,6 +9,7 @@
      4. Utilities (grain, decorative, social icons)
      5. Top ticker
      6. Header & navigation
+     6b. Language toggle (i18n flag button)
      7. Buttons
      8. Hero
      9. Marquee
@@ -336,6 +337,50 @@ body.no-scroll{ overflow: hidden; }
   .nav-toggle,
   .nav-mobile,
   .nav-backdrop{ display: none; }
+}
+
+
+/* 6b. Language toggle (i18n flag button)
+   -------------------------------------------------------------
+   Icon-only button that shows the flag of the OTHER language — i.e.
+   the one clicking will switch to. Visibility is driven by the
+   current value of <html lang>, toggled by js/i18n.js.
+   ============================================================= */
+.lang-toggle{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid var(--rule);
+  background: transparent;
+  flex-shrink: 0;
+  transition: border-color .2s var(--ease), transform .2s var(--ease);
+}
+.lang-toggle:hover{ border-color: var(--bone); }
+.lang-toggle:active{ transform: scale(.96); }
+
+.lang-toggle__flag{
+  width: 24px;
+  height: 12px;
+  display: block;
+}
+
+/* Show UK flag when site is in PT (so the user sees the target language). */
+html[lang^="pt"] .lang-toggle__flag--pt { display: none; }
+html[lang^="en"] .lang-toggle__flag--en { display: none; }
+
+/* In the drawer the toggle sits beneath the mobile CTA. */
+.lang-toggle--drawer{
+  align-self: center;
+  margin-top: 20px;
+  width: 48px;
+  height: 48px;
+}
+.lang-toggle--drawer .lang-toggle__flag{
+  width: 30px;
+  height: 15px;
 }
 
 
