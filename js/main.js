@@ -89,15 +89,28 @@
   const slides = Array.from(track.querySelectorAll('.shot'));
   if (slides.length === 0) return;
 
+  // Helpers that read labels from the active i18n dictionary with a safe fallback.
+  const i18n = window.NVi18n;
+  const labelDot   = (i) => (i18n ? i18n.t('a11y.love_dot',   { n: i + 1 }) : `Ir para depoimento ${i + 1}`);
+  const labelSlide = (i) => (i18n ? i18n.t('a11y.love_slide', { n: i + 1, total: slides.length }) : `${i + 1} de ${slides.length}`);
+
   // Build dots (plain buttons — role=tab would conflict with carousel semantics)
   const dots = slides.map((_, i) => {
     const b = document.createElement('button');
     b.type = 'button';
-    b.setAttribute('aria-label', `Ir para depoimento ${i + 1}`);
+    b.setAttribute('aria-label', labelDot(i));
     b.addEventListener('click', () => scrollToIndex(i));
     dotsEl.appendChild(b);
     return b;
   });
+
+  // Re-apply dynamic aria-labels whenever the active language changes.
+  function applyDynamicLabels() {
+    dots.forEach((d, i) => d.setAttribute('aria-label', labelDot(i)));
+    slides.forEach((s, i) => s.setAttribute('aria-label', labelSlide(i)));
+  }
+  document.addEventListener('nv:lang-change', applyDynamicLabels);
+  if (i18n && i18n.ready) i18n.ready.then(applyDynamicLabels);
 
   let currentIndex = 0;
 

@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "html_lang": "pt-PT",
+    "title": "Natália Vicente — Nail Designer",
+    "description": "Nail design autoral por Natália Vicente. Atelier privado no Porto — entre o clássico e o alternativo.",
+    "og_title": "Natália Vicente — Nail Designer",
+    "og_description": "Unhas que refletem a sua força interior. Nail design autoral no Porto.",
+    "og_locale": "pt_PT"
+  },
+  "a11y": {
+    "skip_link": "Saltar para o conteúdo",
+    "brand": "Natália Vicente — início",
+    "nav_main": "Navegação principal",
+    "nav_mobile": "Navegação móvel",
+    "nav_toggle_open": "Abrir menu",
+    "lang_switch": "Mudar para inglês",
+    "love_carousel": "Mensagens reais de clientes",
+    "love_roledescription": "carrossel",
+    "love_prev": "Depoimento anterior",
+    "love_next": "Próximo depoimento",
+    "love_dots": "Selecionar depoimento",
+    "love_slide": "{{n}} de {{total}}",
+    "love_dot": "Ir para depoimento {{n}}"
+  },
+  "img": {
+    "hero": "Retrato de Natália Vicente",
+    "about": "Natália no atelier",
+    "logo": "Natália Vicente — Nail Designer",
+    "love_1": "Depoimento de cliente via WhatsApp elogiando o atendimento detalhista e a qualidade dos produtos",
+    "love_2": "Depoimento de cliente via WhatsApp destacando a qualidade do trabalho de manicure",
+    "love_3": "Depoimento detalhado de cliente sobre profissionalismo, pontualidade e cuidado da Natália",
+    "love_4": "Comentário no Instagram de cliente satisfeita com as unhas",
+    "love_5": "Avaliação de cliente no Google recomendando a pedicure",
+    "portfolio_1": "Portfólio Natália Vicente — trabalho autoral #01",
+    "portfolio_2": "Portfólio Natália Vicente — trabalho autoral #02",
+    "portfolio_3": "Portfólio Natália Vicente — trabalho autoral #03",
+    "portfolio_4": "Portfólio Natália Vicente — trabalho autoral #04",
+    "portfolio_5": "Portfólio Natália Vicente — trabalho autoral #05",
+    "portfolio_6": "Portfólio Natália Vicente — trabalho autoral #06",
+    "portfolio_7": "Portfólio Natália Vicente — trabalho autoral #07",
+    "portfolio_8": "Portfólio Natália Vicente — trabalho autoral #08"
+  },
+  "ticker": {
+    "bookings": "Agendamentos abertos para Maio",
+    "strength": "Unhas que refletem a sua força interior",
+    "designer": "Nail designer • Porto"
+  },
+  "nav": {
+    "about": "Sobre",
+    "services": "Serviços",
+    "gallery": "Galeria",
+    "love": "Depoimentos",
+    "contact": "Contato",
+    "cta": "Agendar"
+  },
+  "hero": {
+    "eyebrow": "Estúdio • Nail Design Autoral",
+    "title": "Unhas que <em>refletem</em> a sua força interior.",
+    "lede": "Nail design autoral para mulheres que não pedem licença. Entre o clássico e o alternativo, cada par de mãos vira uma peça única — pensada, desenhada e esculpida à medida.",
+    "cta_book": "Reservar horário",
+    "cta_portfolio": "Ver portfólio",
+    "meta_since_dt": "Desde",
+    "meta_since_dd": "2018",
+    "meta_atelier_dt": "Atelier",
+    "meta_atelier_dd": "Porto • PT",
+    "meta_style_dt": "Estilo",
+    "meta_style_dd": "Autoral · Alt",
+    "photo_name": "Natália Vicente",
+    "photo_caption": "<strong>Nº 001</strong> — retrato"
+  },
+  "marquee": {
+    "phrase": "A atitude de um trabalho sutil",
+    "role": "Nail designer",
+    "name": "Natália Vicente"
+  },
+  "about": {
+    "label": "Sobre",
+    "title": "Artista. Perfeccionista. <em>Feminina</em> e rebelde.",
+    "p1": "Me chamo Natália Vicente, sou brasileira, mais precisamente da Grande São Paulo. Trabalho com unhas desde 2018. Antes de encontrar minha grande paixão - o mundo das unhas - me aventurei por um período na área de nutrição. Foi, no entanto, na unhas que consegui unir a atitude do meu estilo alternativo à sutileza das cores que transformam as mãos e acrescentam significado a cada história que eu ouço e sinto.",
+    "p2": "Acredito que a beleza das unhas deve estar ligada a um trabalho sutil e delicado. Como sempre digo: \"sentir dor ao fazer as unhas não é normal.\" Meu compromisso é oferecer técnica, cuidado e respeito ao cliente, buscando resultados que valorizem a saúde das unhas e expressem personalidade sem abrir mão do conforto.",
+    "signature": "Natália Vicente <span>—</span> Nail Designer",
+    "badge": "Atelier <b>Natália Vicente</b> · Desde 2018"
+  },
+  "manifesto": {
+    "label": "Manifesto",
+    "title": "A atitude de um trabalho sutil.",
+    "p1": "O meu maior propósito é entregar um trabalho sutil — desde a pintura do verniz, à remoção cuidadosa da cutícula e, acima de tudo, na remoção segura e precisa do produto anterior.",
+    "p2": "Acredito numa prestação de serviço feita com amor e delicadeza, com foco num acabamento impecável e durabilidade. Cada passo é realizado com atenção aos detalhes: preparação correta da unha, escolha de produtos de qualidade, técnica apurada na aplicação e remoção, e finalização que protege e realça a beleza natural das unhas.",
+    "list_1": "Tratar cada cliente com respeito e cuidado individualizado;",
+    "list_2": "Utilizar métodos que preservem a saúde das unhas e da pele;",
+    "list_3": "Garantir um acabamento uniforme, luminoso e duradouro;",
+    "list_4": "Manter um ambiente higiénico e confortável durante todo o processo.",
+    "p3": "Se procura um resultado elegante, natural e duradouro, será um prazer cuidar das suas unhas com profissionalismo e sensibilidade.",
+    "sub_1": "<b>01</b>Rigor técnico",
+    "sub_2": "<b>02</b>Desenho autoral",
+    "sub_3": "<b>03</b>Atendimento privado",
+    "sub_4": "<b>04</b>Saúde em primeiro lugar",
+    "sub_5": "<b>05</b>Sem dor. Sem pressa."
+  },
+  "services": {
+    "label": "Carta de Serviços",
+    "title": "O que se faz <em>aqui dentro</em>.",
+    "s1_num": "01 / Signature",
+    "s1_name": "Extensão de unha",
+    "s1_desc": "Estrutura fina, resistente e discreta. Para quem quer comprimento sem volume — acabamento natural.",
+    "s2_num": "02 / Autoral",
+    "s2_name": "Nail Art",
+    "s2_desc": "Projetos desenhados à mão, colocação de pedrarias, jóias de unhas.",
+    "s3_num": "03 / Clássico",
+    "s3_name": "Manicure Clássica",
+    "s3_desc": "Preparo profundo, cutículas, aplicação de verniz tradicional. O básico, feito com rigor de uma boa manicure brasileira.",
+    "s4_num": "04 / Cuidado",
+    "s4_name": "Pedicure e Pedicure Spa",
+    "s4_desc": "Esfoliação, hidratação intensiva, aplicação de verniz tradicional ou verniz gel, remoção de calosidades. Ritual longo, toalhas quentes para um momento de descanso.",
+    "s5_num": "05 / Biológico",
+    "s5_name": "Aplicação de Verniz Biológico",
+    "s5_desc": "Aplicação de verniz gel biológico Bio Sculpture, que respeita a saúde da unha natural. Proporciona um acabamento brilhante, duradouro e de aspeto natural, sem danificar a unha. Ideal para quem procura beleza e cuidado em simultâneo.",
+    "s6_num": "06 / Aftercare",
+    "s6_name": "Manutenção & Remoção",
+    "s6_desc": "Manutenção a cada 3–4 semanas. Remoção feita tanto de forma química quanto mecânica, tudo depende do trabalho que tens — sem agressão à lâmina natural."
+  },
+  "gallery": {
+    "label": "Portfólio",
+    "title": "Trabalho <em>recente</em>."
+  },
+  "love": {
+    "label": "Love letters",
+    "title": "Quem já <em>passou por aqui</em>."
+  },
+  "booking": {
+    "label": "Agendamento",
+    "title": "Reserva a tua <em>sessão</em>.",
+    "lede": "As vagas abrem mensalmente e esgotam rápido. Envia uma mensagem com o serviço pretendido e, se houver, referências — respondo em até 24h.",
+    "contact_dt": "Contato",
+    "instagram_dt": "Instagram",
+    "payment_dt": "Pagamento",
+    "payment_dd": "MB Way · Cartão · Transferência",
+    "card_title": "Marca o teu horário",
+    "card_desc": "Envia uma mensagem direta via WhatsApp ou Instagram. Resposta em até 24 horas.",
+    "hours_weekdays_dt": "Ter — Sex",
+    "hours_weekdays_dd": "<b>10h — 20h</b>",
+    "hours_sat_dt": "Sábado",
+    "hours_sat_dd": "<b>10h — 16h</b>",
+    "hours_sun_dt": "Domingo",
+    "hours_sun_dd": "<b>Fechado</b>",
+    "hours_mon_dt": "Segunda",
+    "hours_mon_dd": "<b>Sob marcação</b>"
+  },
+  "footer": {
+    "brand_desc": "Nail designer · atelier privado no Porto. Unhas autorais, feitas para quem quer ser vista.",
+    "explore": "Explorar",
+    "contact": "Contato",
+    "social": "Social",
+    "copyright": "© 2026 Natália Vicente — Nail Designer",
+    "made_before": "Made with",
+    "made_after": "no Porto"
+  }
+}

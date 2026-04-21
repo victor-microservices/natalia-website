@@ -41,7 +41,11 @@ natalia-website/
 ├── css/
 │   └── style.css             # single stylesheet, organized into 18 sections
 ├── js/
+│   ├── i18n.js               # dictionary loader + DOM translator (see "Internationalization")
 │   └── main.js               # two IIFEs: mobile drawer (focus trap) + love-letters carousel
+├── i18n/
+│   ├── pt.json               # Portuguese (default)
+│   └── en.json               # British English
 ├── images/
 │   ├── logo.png              # official logo with wordmark
 │   ├── logo-mark.png         # illustration-only version (used in header)
@@ -58,8 +62,11 @@ natalia-website/
 
 ## Run locally
 
-Since this is a fully static site, just open `index.html` in a browser.
-For development with *live reload*, any static server will do:
+The site must be served over HTTP — opening `index.html` directly from the
+file system (`file://`) does **not** work because `js/i18n.js` loads the
+language dictionaries via `fetch`, which browsers block for local files.
+
+Any static server works:
 
 ```bash
 # Python 3
@@ -133,7 +140,41 @@ Mobile-first breakpoints:
 - Semantic HTML5 with a single `<h1>`.
 - Canonical URL, Open Graph and Twitter Card metadata.
 - JSON-LD structured data (`LocalBusiness` / `BeautySalon`).
-- Portuguese (Portugal) language declared (`lang="pt-PT"`).
+- `<html lang>`, `<title>`, `<meta name="description">` and `og:*` tags are
+  rewritten on language change (see below).
+
+## Internationalization (i18n)
+
+The site supports **Portuguese (pt-PT, default)** and **British English
+(en-GB)**. A flag button in the header (and mobile drawer) toggles between
+them and persists the choice in `localStorage` under `nv.lang`. On first
+visit, the initial language is picked from `localStorage`, then
+`navigator.language`, falling back to Portuguese.
+
+**Dictionaries.** One JSON file per language lives under `i18n/`. Adding a
+new language means dropping a new file (e.g. `i18n/fr.json`), adding its
+code to the `LANGS` array in `js/i18n.js`, and adding a flag symbol +
+`.lang-toggle__flag--<code>` visibility rule.
+
+**Markup.** Translatable content is declared on elements via `data-*`
+attributes — no central string table in JS:
+
+| Attribute                           | Effect                                         |
+|---|---|
+| `data-i18n="key"`                   | sets `textContent`                             |
+| `data-i18n-html="key"`              | sets `innerHTML` (for entries containing `<em>`, `<b>`, etc.) |
+| `data-i18n-alt="key"`               | sets the `alt` attribute                       |
+| `data-i18n-aria-label="key"`        | sets `aria-label`                              |
+| `data-i18n-aria-roledescription="key"` | sets `aria-roledescription`                 |
+| `data-i18n-title="key"`             | sets `title`                                   |
+| `data-i18n-placeholder="key"`       | sets `placeholder`                             |
+| `data-i18n-content="key"`           | sets `content` (used on `<meta>` tags)         |
+
+**Dynamic strings.** Scripts can call `window.NVi18n.t(key, params)` to
+translate imperatively (e.g. the carousel's per-dot `aria-label`), with
+`{{name}}` placeholders interpolated from `params`. Whenever the language
+changes, `js/i18n.js` dispatches a `nv:lang-change` `CustomEvent` on
+`document`, so subscribers can re-apply any dynamic labels.
 
 ## Page sections
 
