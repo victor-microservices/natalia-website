@@ -9,6 +9,9 @@ desktop.ini
 *.swp
 *~
 
+# Claude Code (local per-project permissions/state)
+.claude/
+
 # Logs
 *.log
 npm-debug.log*
