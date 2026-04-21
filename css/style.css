@@ -855,6 +855,14 @@ section{ position: relative; }
   color: #fff;
   padding: 6px 12px;
 }
+/* On mobile, stack the 01–05 items vertically instead of letting them wrap
+   into uneven rows. */
+@media (max-width: 699px){
+  .manifesto__sub{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 
 
 /* 14. Gallery
